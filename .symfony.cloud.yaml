@@ -4,6 +4,7 @@ type: php:7.4
 
 runtime:
     extensions:
+        - xsl
         - pdo_pgsql
         - apcu
         - mbstring
