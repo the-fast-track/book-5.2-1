@@ -17,3 +17,7 @@ services:
         image: blackfire/blackfire
         env_file: .env.local
         ports: [8707]
+
+    redis:
+        image: redis:5-alpine
+        ports: [6379]
