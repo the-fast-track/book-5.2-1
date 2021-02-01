@@ -12,3 +12,8 @@ services:
     mailer:
         image: schickling/mailcatcher
         ports: [1025, 1080]
+
+    blackfire:
+        image: blackfire/blackfire
+        env_file: .env.local
+        ports: [8707]
