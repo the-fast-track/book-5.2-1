@@ -6,7 +6,7 @@ framework:
         transports:
             # https://symfony.com/doc/current/messenger.html#transport-configuration
             async:
-                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                dsn: '%env(RABBITMQ_URL)%'
                 options:
                     auto_setup: false
                     use_notify: true
