@@ -20,6 +20,7 @@
         "symfony/monolog-bundle": "^3.6",
         "symfony/proxy-manager-bridge": "5.2.*",
         "symfony/twig-bundle": "^5.2",
+        "symfony/validator": "5.2.*",
         "symfony/yaml": "5.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/intl-extra": "^3",
