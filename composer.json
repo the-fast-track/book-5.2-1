@@ -16,6 +16,7 @@
     },
     "require-dev": {
         "symfony/debug-bundle": "^5.2",
+        "symfony/maker-bundle": "^1.28",
         "symfony/stopwatch": "^5.2",
         "symfony/twig-bundle": "^5.2",
         "symfony/var-dumper": "^5.2",
