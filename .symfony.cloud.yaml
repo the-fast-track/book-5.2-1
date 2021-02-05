@@ -50,3 +50,8 @@ hooks:
         set -x -e
 
         (>&2 symfony-deploy)
+
+workers:
+    messages:
+        commands:
+            start: symfony console messenger:consume async -vv --time-limit=3600 --memory-limit=128M
