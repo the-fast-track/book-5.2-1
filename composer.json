@@ -12,6 +12,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.8",
         "easycorp/easyadmin-bundle": "^3",
+        "imagine/imagine": "^1.2",
         "sensio/framework-extra-bundle": "^6.0",
         "symfony/cache": "5.2.*",
         "symfony/console": "5.2.*",
