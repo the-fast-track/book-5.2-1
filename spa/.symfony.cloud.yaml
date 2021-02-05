@@ -1,0 +1,34 @@
+name: spa
+
+type: php:8.0
+size: S
+
+build:
+    flavor: none
+
+web:
+    commands:
+        start: sleep
+    locations:
+        "/":
+            root: "public"
+            index:
+                - "index.html"
+            scripts: false
+            expires: 10m
+
+hooks:
+    build: |
+        set -x -e
+
+        curl -s https://get.symfony.com/cloud/configurator | (>&2 bash)
+        (>&2
+            unset NPM_CONFIG_PREFIX
+            export NVM_DIR=${SYMFONY_APP_DIR}/.nvm
+
+            yarn-install
+
+            set +x && . "${SYMFONY_APP_DIR}/.nvm/nvm.sh" && set -x
+
+            yarn encore prod
+        )
